@@ -20,7 +20,6 @@
 
         header { background-color: var(--blanc); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         
-        /* --- NOUVEAU STYLE : BOUTONS DE CONTACT EN HAUT --- */
         .top-bar { background-color: var(--fond-gris); padding: 12px 0; text-align: right; border-bottom: 1px solid #ddd; }
         .top-bar span { margin-left: 15px; }
         .top-bar a { background-color: var(--vert-fonce); color: var(--blanc); padding: 8px 18px; border-radius: 20px; font-weight: bold; font-size: 13px; transition: background-color 0.3s; display: inline-block; }
@@ -56,7 +55,6 @@
         .fredd-service-text { display: flex; flex-direction: column; }
         .fredd-service-title { font-weight: bold; text-transform: uppercase; margin: 0; font-size: 14px; color: #000; }
 
-        /* --- NOUVEAU STYLE : BLOC CONTACT CTA (Call to Action) --- */
         .contact-cta { background-color: var(--marron-clair); padding: 50px 20px; text-align: center; margin-top: 50px; }
         .contact-cta h2 { color: var(--vert-fonce); font-size: 26px; margin-top: 0; margin-bottom: 15px; text-transform: uppercase; }
         .contact-cta p { color: #333; margin-bottom: 30px; font-size: 16px; font-weight: bold; }
@@ -67,6 +65,25 @@
         .btn-marron { background-color: var(--marron-fonce); color: var(--blanc); }
 
         footer { background-color: var(--marron-fonce); color: var(--blanc); text-align: center; padding: 20px 0; font-size: 14px; }
+
+        /* =========================================
+           VERSION MOBILE (SMARTPHONES ET TABLETTES)
+           ========================================= */
+        @media screen and (max-width: 768px) {
+            .top-bar { text-align: center; }
+            .top-bar span { display: block; margin: 8px 0; margin-left: 0; }
+            .nav-bar { flex-direction: column; gap: 15px; }
+            .nav-menu { flex-wrap: wrap; justify-content: center; gap: 15px; }
+            .nav-menu li { margin: 0; }
+            .fredd-section { flex-direction: column; padding: 20px; }
+            .fredd-column { width: 100%; }
+            .detailed-service { flex-direction: column; text-align: center; padding: 20px; }
+            .detailed-service-icon { margin-right: 0; margin-bottom: 20px; }
+            .cta-buttons { flex-direction: column; width: 100%; }
+            .btn { width: 100%; box-sizing: border-box; margin-bottom: 10px; }
+            .main-content { padding: 30px 15px; }
+            .content-box { padding: 20px; }
+        }
     </style>
 </head>
 <body>
@@ -103,9 +120,9 @@
                 <hr class="fredd-separator">
               <div class="bio-text">
                 <p>Passionné par l'aménagement extérieur et le travail de la terre, je mets mon exigence et mon sens du travail bien fait au service de votre jardin.</p>
-                    <p>Fort d'un parcours complet en aménagements paysagers et pépinières (formé à l'Institut de Genech,&nbsp; j'ai consolidé mon expérience sur le terrain pendant plusieurs années en tant qu'encadrant et moniteur technique en espaces verts.   Porté par des valeurs alliant « La Nature et l'Humain » , je mets aujourd'hui cette solide expertise professionnelle directement au service de vos projets extérieurs.</p>
+                    <p>Fort d'un parcours complet en aménagements paysagers et pépinières (formé à l'Institut de Genech), j'ai consolidé mon expérience sur le terrain pendant plusieurs années en tant qu'encadrant et moniteur technique en espaces verts. Porté par des valeurs alliant « La Nature et l'Humain », je mets aujourd'hui cette solide expertise professionnelle directement au service de vos projets extérieurs.</p>
                     <p>Mon approche est méthodique : <strong>nous évaluons la situation</strong> sur le terrain, <strong>nous définissons la meilleure intervention</strong> selon vos besoins, <strong>je réalise les travaux</strong> avec rigueur, et <strong>je m'assure de vous laisser un espace propre</strong> et sublimé.</p>
-                  <p>Je suis à votre disposition sur le secteur de Masny et ses alentours pour l'entretien et la valorisation de vos espaces verts.</p>
+                  <p>Je suis à votre disposition sur le secteur de Masny et alentours pour l'entretien et la valorisation de vos espaces verts.</p>
                 </div>
             </div>
 
@@ -142,7 +159,6 @@
         </section>
     </main>
 
-    <!-- NOUVEAU BLOC : APPEL À L'ACTION -->
     <section class="contact-cta">
         <div class="container">
             <h2>Besoin d'une intervention dans votre jardin ?</h2>

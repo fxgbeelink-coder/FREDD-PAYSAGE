@@ -54,6 +54,25 @@
         .btn-marron { background-color: var(--marron-fonce); color: var(--blanc); }
 
         footer { background-color: var(--marron-fonce); color: var(--blanc); text-align: center; padding: 20px 0; font-size: 14px; }
+
+        /* =========================================
+           VERSION MOBILE (SMARTPHONES ET TABLETTES)
+           ========================================= */
+        @media screen and (max-width: 768px) {
+            .top-bar { text-align: center; }
+            .top-bar span { display: block; margin: 8px 0; margin-left: 0; }
+            .nav-bar { flex-direction: column; gap: 15px; }
+            .nav-menu { flex-wrap: wrap; justify-content: center; gap: 15px; }
+            .nav-menu li { margin: 0; }
+            .fredd-section { flex-direction: column; padding: 20px; }
+            .fredd-column { width: 100%; }
+            .detailed-service { flex-direction: column; text-align: center; padding: 20px; }
+            .detailed-service-icon { margin-right: 0; margin-bottom: 20px; }
+            .cta-buttons { flex-direction: column; width: 100%; }
+            .btn { width: 100%; box-sizing: border-box; margin-bottom: 10px; }
+            .main-content { padding: 30px 15px; }
+            .content-box { padding: 20px; }
+        }
     </style>
 </head>
 <body>
