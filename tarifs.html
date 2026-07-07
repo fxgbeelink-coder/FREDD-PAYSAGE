@@ -35,14 +35,17 @@
         .main-content { padding: 50px 20px; max-width: 800px; margin: 0 auto; }
         .content-box { background-color: var(--blanc); padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
 
-        .fredd-tarifs-table { width: 100%; border-collapse: collapse; font-size: 16px; margin-top: 10px; }
-        .fredd-tarifs-table thead { background-color: var(--vert-fonce); color: var(--blanc); text-transform: uppercase; }
-        .fredd-tarifs-table th { padding: 15px; text-align: left; border: 1px solid var(--vert-fonce); }
-        .fredd-tarifs-table tbody { background-color: var(--marron-clair); }
-        .fredd-tarifs-table td { padding: 15px; border: 1px solid #c5b99e; color: #000; font-weight: bold; }
-        .fredd-tarifs-table td:last-child { text-align: right; font-size: 18px; }
-        .fredd-tarifs-table tfoot { background-color: #eee9dd; text-align: center; }
-        .fredd-tarifs-table tfoot td { padding: 15px; font-style: italic; color: #333; font-size: 14px; font-weight: normal; border: 1px solid #c5b99e; }
+        .tarif-page-content h2 { color: var(--vert-fonce); font-size: 28px; text-transform: uppercase; margin-bottom: 15px; border-bottom: 2px solid var(--marron-clair); padding-bottom: 10px; }
+        .tarif-unique { font-size: 20px; font-weight: bold; color: var(--vert-fonce); margin-bottom: 5px; }
+        .tarif-page-content p { font-size: 16px; line-height: 1.6; color: #333; margin-top: 0; }
+        .tarif-list { list-style-type: disc; margin-left: 20px; font-size: 16px; line-height: 1.8; color: #333; margin-bottom: 10px; padding-left: 15px; }
+        .tarif-prix { font-size: 20px; font-weight: bold; color: var(--marron-fonce); margin-bottom: 30px; margin-top: 10px;}
+        .mt-40 { margin-top: 40px; }
+        
+        .credit-impot-box { background-color: var(--marron-clair); padding: 30px; border-radius: 10px; text-align: center; margin-top: 40px; border: 2px dashed var(--vert-fonce); }
+        .credit-impot-box h3 { color: var(--vert-fonce); font-size: 24px; margin-top: 0; margin-bottom: 15px; text-transform: uppercase; }
+        .credit-impot-box p { font-size: 18px; margin: 0; line-height: 1.6; }
+        .credit-impot-box strong { color: var(--vert-fonce); font-size: 20px; }
 
         .contact-cta { background-color: var(--marron-clair); padding: 50px 20px; text-align: center; margin-top: 50px; }
         .contact-cta h2 { color: var(--vert-fonce); font-size: 26px; margin-top: 0; margin-bottom: 15px; text-transform: uppercase; }
@@ -55,19 +58,12 @@
 
         footer { background-color: var(--marron-fonce); color: var(--blanc); text-align: center; padding: 20px 0; font-size: 14px; }
 
-        /* =========================================
-           VERSION MOBILE (SMARTPHONES ET TABLETTES)
-           ========================================= */
         @media screen and (max-width: 768px) {
             .top-bar { text-align: center; }
             .top-bar span { display: block; margin: 8px 0; margin-left: 0; }
             .nav-bar { flex-direction: column; gap: 15px; }
             .nav-menu { flex-wrap: wrap; justify-content: center; gap: 15px; }
             .nav-menu li { margin: 0; }
-            .fredd-section { flex-direction: column; padding: 20px; }
-            .fredd-column { width: 100%; }
-            .detailed-service { flex-direction: column; text-align: center; padding: 20px; }
-            .detailed-service-icon { margin-right: 0; margin-bottom: 20px; }
             .cta-buttons { flex-direction: column; width: 100%; }
             .btn { width: 100%; box-sizing: border-box; margin-bottom: 10px; }
             .main-content { padding: 30px 15px; }
@@ -102,34 +98,34 @@
     </div>
 
     <main class="main-content">
-        <div class="content-box">
-            <table class="fredd-tarifs-table">
-                <thead>
-                    <tr>
-                        <th>SERVICES</th>
-                        <th>PRIX</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tonte &lt; 300m²</td>
-                        <td>€45</td>
-                    </tr>
-                    <tr>
-                        <td>Taille Haie &lt; 15m</td>
-                        <td>€110</td>
-                    </tr>
-                    <tr>
-                        <td>Forfait Entretien Mensuel (Petite Surface)</td>
-                        <td>€90</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="2">Tarifs sur devis pour surfaces spécifiques. N'hésitez pas à me contacter.</td>
-                    </tr>
-                </tfoot>
-            </table>
+        <div class="content-box tarif-page-content">
+            
+            <h2>Tarifs</h2>
+            <p class="tarif-unique">Tarif de base : 30 €/heure</p>
+            <p>Je propose un tarif simple et transparent pour mes prestations de jardinage.</p>
+
+            <h2 class="mt-40">Détail :</h2>
+            <ul class="tarif-list">
+                <li>Création de massifs</li>
+                <li>Débroussaillage</li>
+                <li>Taille de haies</li>
+                <li>Tonte de pelouse</li>
+                <li>Entretien extérieur</li>
+            </ul>
+            <p class="tarif-prix">👉 30 € / heure</p>
+
+            <ul class="tarif-list mt-40">
+                <li>Élagage</li>
+            </ul>
+            <p class="tarif-prix">👉 40 € / heure</p>
+
+            <div class="credit-impot-box">
+                <h3>50% de crédit d'impôt</h3>
+                <p>Grâce au service à la personne<br><br>
+                Soit <strong>15 €/heure</strong> après avantage fiscal (Jardinage classique)<br>
+                Soit <strong>20 €/heure</strong> après avantage fiscal (Élagage)</p>
+            </div>
+
         </div>
     </main>
 
